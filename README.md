@@ -17,7 +17,7 @@ const Rtree = require('rtree-ldf')
 
 ```js
 const tree = new Rtree({
-	dir: ./db,
+	dir: './db',
 	openExisting: true,
 	cacheSize: 100000,
 	maxEntries: 16,
