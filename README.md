@@ -9,12 +9,15 @@ Rtree-ldf is based on [rbush](https://github.com/mourner/rbush), a high-performa
 Install with NPM (`npm install --save rtree-ldf`).
 
 ## Usage
+```js
+const Rtree = require('rtree-ldf')
+```
 
 ### Creating a Tree
 
 ```js
 const tree = new Rtree({
-	dir: ./db,
+	dir: './db',
 	openExisting: true,
 	cacheSize: 100000,
 	maxEntries: 16,
