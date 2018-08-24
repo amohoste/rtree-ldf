@@ -1,6 +1,6 @@
 {
   "name": "rtree-ldf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Disk based rtree implementation based on rbush mainly built to create fragmented linked data rtrees",
   "repository": {
     "type": "git",

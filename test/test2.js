@@ -9,7 +9,7 @@ function someData(n) {
     return data;
 }
 
-var tree = new Rtree({ dir: "./out/a"}).load(someData(6000));
+var tree = new Rtree({ dir: "./out/a"}).load(someData(60000));
 console.log("Optheight: " + tree.getOptimalHeight(500000, 1500000));
 tree.toFragments({outDir: '/Users/amoryhoste/Desktop/out/', treeDir: 'tree', dataDir: 'data', collection: 'stations' , manages: 'http://vocab.gtfs.org/terms#station'});
 tree.close();
