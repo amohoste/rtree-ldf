@@ -10,6 +10,6 @@ function someData(n) {
 }
 
 var tree = new Rtree({ dir: "./out/a"}).load(someData(60000));
-console.log("Optheight: " + tree.getOptimalHeight(500000, 1500000));
+console.log("Optheight: " + tree.getOptimalHeight(300000, 800000));
 tree.toFragments({outDir: '/Users/amoryhoste/Desktop/out/', treeDir: 'tree', dataDir: 'data', collection: 'stations' , manages: 'http://vocab.gtfs.org/terms#station'});
 tree.close();
